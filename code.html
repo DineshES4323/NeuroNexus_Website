@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NeuroNexus – Where AI Comes Alive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Manrope', sans-serif;
+      background: #fff;
+      color: #222;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 20px 60px;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #fc3030;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .section {
+      padding: 80px 60px;
+      text-align: center;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #fe9503, #fe0055);
+      color: white;
+      padding: 140px 20px 100px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 720px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      background: white;
+      color: #fe3e03;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 40px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background: #f6e2e5;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      margin-bottom: 40px;
+      font-weight: 800;
+    }
+
+    .features, .use-cases {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff0f0;
+      padding: 30px;
+      border-radius: 20px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #fcdddd;
+    }
+
+    .card h3 {
+      color: #ff3c3c;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .how-it-works {
+      background: #ff4646;
+    }
+
+    .testimonials {
+      background: #ff4646;
+      color: rgb(255, 255, 255);
+    }
+
+    .testimonial {
+      background: hsl(0, 0%, 100%);
+      padding: 30px;
+      color: black;
+      margin: 20px auto;
+      border-radius: 16px;
+      max-width: 700px;
+      font-style: italic;
+    }
+
+    .testimonial strong {
+        color: black;
+        font-weight: 700;
+    }
+
+    .contact {
+      background: #ffffff;
+    }
+
+    footer {
+      background: #ff4646;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    @media(max-width: 768px) {
+      .hero h1 { font-size: 2.2rem; }
+      nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">NeuroNexus</div>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#how">How It Works</a>
+    <a href="#usecases">Use Cases</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Where AI Comes Alive</h1>
+  <p>Welcome to NeuroNexus — an intuitive, colorful platform that lets you design, train, and deploy AI with creativity and control.</p>
+  <button onclick="alert('Thanks! We’ll contact you.')">Try It Free</button>
+</section>
+
+<section class="section" id="features">
+  <h2>Why Choose NeuroNexus?</h2>
+  <div class="features">
+    <div class="card">
+      <h3>Smart & Simple</h3>
+      <p>No code, no problem. Train powerful models with drag-and-drop ease.</p>
+    </div>
+    <div class="card">
+      <h3>Creative AI</h3>
+      <p>Generate unique content, images, and designs using our neural engine.</p>
+    </div>
+    <div class="card">
+      <h3>Data Integrity</h3>
+      <p>Built-in validation and anomaly detection keeps your pipeline clean.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section how-it-works" id="how">
+  <h2>How It Works</h2>
+  <div class="features">
+    <div class="card">
+      <h3>Step 1: Upload</h3>
+      <p>Connect your CSVs, APIs, or database in seconds.</p>
+    </div>
+    <div class="card">
+      <h3>Step 2: Build</h3>
+      <p>Select your model type — vision, NLP, or automation. Set goals.</p>
+    </div>
+    <div class="card">
+      <h3>Step 3: Deploy</h3>
+      <p>Export as API or embed into your app with just one line of code.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="usecases">
+  <h2>Use Cases</h2>
+  <div class="use-cases">
+    <div class="card">
+      <h3>Education</h3>
+      <p>Personalized learning paths and AI tutors for student success.</p>
+    </div>
+    <div class="card">
+      <h3>E-commerce</h3>
+      <p>AI-powered recommendations and smart inventory forecasting.</p>
+    </div>
+    <div class="card">
+      <h3>Healthcare</h3>
+      <p>Early diagnosis support and patient care automation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section testimonials" id="testimonials">
+  <h2>What Our Users Say</h2>
+  <div class="testimonial" id="testimonial">
+    “NeuroNexus gave us the confidence to launch AI apps without hiring data scientists.”
+    <br><br><strong>– Radhika Iyer, CTO @ SparkleSoft</strong>
+  </div>
+  <div class="testimonial">
+    “Our whole marketing team now runs 4x faster with the creative tools inside NeuroNexus.”
+    <br><br><strong>– Sameer Khan, Head of Growth @ Bloomify</strong>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <h2>Let’s Connect</h2>
+  <p>📧 Email: hello@neuronnexus.ai</p>
+  <p>📞 Phone: +91-98765-43210</p>
+  <p>📍 Bengaluru, India</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 NeuroNexus. Crafted with 💜and code.</p>
+</footer>
+
+</body>
+</html>
