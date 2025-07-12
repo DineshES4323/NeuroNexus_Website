@@ -9,27 +9,27 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Manrope', sans-serif;
-      background: #fff;
+      background: linear-gradient(to bottom right, #fff5ec, #ffd8b5);
       color: #222;
       overflow-x: hidden;
     }
 
     header {
       padding: 20px 60px;
-      background: white;
+      background: #ffefdd;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: sticky;
       top: 0;
       z-index: 10;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
 
     .logo {
       font-size: 1.8rem;
       font-weight: 800;
-      color: #fc3030;
+      color: #f28500;
     }
 
     nav a {
@@ -45,16 +45,18 @@
     }
 
     .hero {
-      background: linear-gradient(135deg, #fe9503, #fe0055);
-      color: white;
+      background: linear-gradient(135deg, #ffc088, #fc9f6b);
+      color: #3a2b1c;
       padding: 140px 20px 100px;
       text-align: center;
+      position: relative;
     }
 
     .hero h1 {
       font-size: 3.2rem;
       font-weight: 800;
       margin-bottom: 20px;
+      animation: fadeIn 1.2s ease-in-out;
     }
 
     .hero p {
@@ -65,8 +67,8 @@
     }
 
     .hero button {
-      background: white;
-      color: #fe3e03;
+      background: #fff3ea;
+      color: #f28500;
       border: none;
       padding: 14px 30px;
       border-radius: 40px;
@@ -77,7 +79,12 @@
     }
 
     .hero button:hover {
-      background: #f6e2e5;
+      background: #ffe4ca;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     h2 {
@@ -95,36 +102,37 @@
     }
 
     .card {
-      background: #fff0f0;
+      background: white;
       padding: 30px;
       border-radius: 20px;
-      transition: transform 0.3s;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
 
     .card:hover {
       transform: translateY(-5px);
-      background: #fcdddd;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
 
     .card h3 {
-      color: #ff3c3c;
+      color: #f28500;
       margin-bottom: 10px;
       font-size: 1.3rem;
     }
 
     .how-it-works {
-      background: #ff4646;
+      background: #ffe9d0;
     }
 
     .testimonials {
-      background: #ff4646;
-      color: rgb(255, 255, 255);
+      background: #ffcfa8;
+      color: #3a2b1c;
     }
 
     .testimonial {
-      background: hsl(0, 0%, 100%);
+      background: white;
       padding: 30px;
-      color: black;
+      color: #222;
       margin: 20px auto;
       border-radius: 16px;
       max-width: 700px;
@@ -132,17 +140,17 @@
     }
 
     .testimonial strong {
-        color: black;
-        font-weight: 700;
+      color: #222;
+      font-weight: 700;
     }
 
     .contact {
-      background: #ffffff;
+      background: #fff8f1;
     }
 
     footer {
-      background: #ff4646;
-      color: rgb(255, 255, 255);
+      background: #f28500;
+      color: white;
       text-align: center;
       padding: 40px 20px;
     }
@@ -172,7 +180,7 @@
 
 <section class="hero">
   <h1>Where AI Comes Alive</h1>
-  <p>Welcome to NeuroNexus — an intuitive, colorful platform that lets you design, train, and deploy AI with creativity and control.</p>
+  <p>Welcome to NeuroNexus — a vibrant AI platform designed to empower ideas, automate solutions, and elevate user creativity.</p>
   <button onclick="alert('Thanks! We’ll contact you.')">Try It Free</button>
 </section>
 
@@ -181,15 +189,15 @@
   <div class="features">
     <div class="card">
       <h3>Smart & Simple</h3>
-      <p>No code, no problem. Train powerful models with drag-and-drop ease.</p>
+      <p>Drag-and-drop interfaces and AI suggestions make model building effortless.</p>
     </div>
     <div class="card">
-      <h3>Creative AI</h3>
-      <p>Generate unique content, images, and designs using our neural engine.</p>
+      <h3>Creative Engine</h3>
+      <p>Generate content, strategies, or images using built-in generative models.</p>
     </div>
     <div class="card">
-      <h3>Data Integrity</h3>
-      <p>Built-in validation and anomaly detection keeps your pipeline clean.</p>
+      <h3>Always Learning</h3>
+      <p>Continuous model improvement with real-time feedback from usage.</p>
     </div>
   </div>
 </section>
@@ -198,16 +206,16 @@
   <h2>How It Works</h2>
   <div class="features">
     <div class="card">
-      <h3>Step 1: Upload</h3>
-      <p>Connect your CSVs, APIs, or database in seconds.</p>
+      <h3>Upload Data</h3>
+      <p>Connect your sources: files, APIs, or data lakes — with a click.</p>
     </div>
     <div class="card">
-      <h3>Step 2: Build</h3>
-      <p>Select your model type — vision, NLP, or automation. Set goals.</p>
+      <h3>Customize AI</h3>
+      <p>Pick goals, tweak parameters, or let the platform auto-optimize for you.</p>
     </div>
     <div class="card">
-      <h3>Step 3: Deploy</h3>
-      <p>Export as API or embed into your app with just one line of code.</p>
+      <h3>Launch Instantly</h3>
+      <p>Deploy as API, share via link, or embed into your products in seconds.</p>
     </div>
   </div>
 </section>
@@ -216,23 +224,23 @@
   <h2>Use Cases</h2>
   <div class="use-cases">
     <div class="card">
-      <h3>Education</h3>
-      <p>Personalized learning paths and AI tutors for student success.</p>
+      <h3>EdTech</h3>
+      <p>Personalize teaching with AI-powered tutors, lesson planners, and evaluators.</p>
     </div>
     <div class="card">
-      <h3>E-commerce</h3>
-      <p>AI-powered recommendations and smart inventory forecasting.</p>
+      <h3>Retail</h3>
+      <p>Understand your customers better and automate dynamic pricing strategies.</p>
     </div>
     <div class="card">
       <h3>Healthcare</h3>
-      <p>Early diagnosis support and patient care automation.</p>
+      <p>Predict risks early, streamline paperwork, and monitor patient vitals.</p>
     </div>
   </div>
 </section>
 
 <section class="section testimonials" id="testimonials">
   <h2>What Our Users Say</h2>
-  <div class="testimonial" id="testimonial">
+  <div class="testimonial">
     “NeuroNexus gave us the confidence to launch AI apps without hiring data scientists.”
     <br><br><strong>– Radhika Iyer, CTO @ SparkleSoft</strong>
   </div>
@@ -250,7 +258,7 @@
 </section>
 
 <footer>
-  <p>&copy; 2025 NeuroNexus. Crafted with 💜and code.</p>
+  <p>&copy; 2025 NeuroNexus. Crafted with 💜 and AI.</p>
 </footer>
 
 </body>
